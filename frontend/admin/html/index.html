@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="/frontend/admin/css/index.css">
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Hello Admin</h1>
+    <div class="appointment">
+        <div class="total-appointment">
+        </div>
+
+        <div class="patient-by-age"></div>
+    </div>
+
+    <div class="availability">
+        <h3>Doctor Availability</h3>
+        <input type=" text" id='search' placeholder="search doctors">
+        <div id="available">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor Name</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="appointment-list">
+        <h3>Appointment List</h3>
+        <div id="app-list-tb">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                        <th>status</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/frontend/admin/js/index.js"></script>
+</body>
+
+</html>

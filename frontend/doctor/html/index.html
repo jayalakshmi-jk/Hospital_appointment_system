@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor page</title>
+    <link rel="stylesheet" href="/frontend/doctor/css/index.css">
+</head>
+
+<body>
+    <h1>doctor page</h1>
+    <div class="appointment-list">
+        <h3>Appointment List</h3>
+        <input type="text" id="search" placeholder="search patient...">
+        <div id="app-list-tb">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="edit-input-container">
+        <form id="edit-input">
+            <h3>Change Values</h3>
+            <label for="date">Date</label><br>
+            <input type="date" id="date"><br><br>
+
+            <label for="time">Time</label><br>
+            <input type="time" id="time"><br><br>
+
+            <button type="submit">Save</button>
+
+        </form>
+    </div>
+
+    <script src="/frontend/doctor/js/index.js"></script>
+</body>
+
+</html>
