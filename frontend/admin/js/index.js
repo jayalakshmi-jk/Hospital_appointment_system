@@ -22,7 +22,7 @@ if (!l_admin) {
 async function patient_age_group() {
   try {
     let response = await fetch(
-      "http://localhost:3000/admin/patients/age_group",
+      "http://hospital-appointment-system-s9z1.onrender.com/admin/patients/age_group",
     );
 
     let data = await response.json();
@@ -45,14 +45,14 @@ async function patient_age_group() {
 async function total_appointment_count() {
   try {
     let get_data = await fetch(
-      "http://localhost:3000/admin/book_appointment/get",
+      "http://hospital-appointment-system-s9z1.onrender.com/admin/book_appointment/get",
     );
     let appointment_data = await get_data.json();
 
     total_appointment.innerHTML = `<h2>Total Appointments</h2><h1>${appointment_data[0].total}</h1>`;
 
     let response = await fetch(
-      "http://localhost:3000/admin/book_appointment/app_list",
+      "http://hospital-appointment-system-s9z1.onrender.com/admin/book_appointment/app_list",
     );
     let app_list = await response.json();
 
@@ -80,7 +80,7 @@ async function available_doctors(e) {
   e.preventDefault();
   try {
     let response = await fetch(
-      "http://localhost:3000/patients/book_appointment",
+      "http://hospital-appointment-system-s9z1.onrender.com/patients/book_appointment",
     );
     let data = await response.json();
     console.log(data);

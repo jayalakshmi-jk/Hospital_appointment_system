@@ -10,7 +10,7 @@ async function available_doctors(e) {
   e.preventDefault();
   try {
     let response = await fetch(
-      "http://localhost:3000/patients/book_appointment",
+      "http://hospital-appointment-system-s9z1.onrender.com/patients/book_appointment",
     );
     let data = await response.json();
 
@@ -42,7 +42,7 @@ async function book_appointment(patient_id, doctor_id) {
   };
   try {
     let get_data = await fetch(
-      "http://localhost:3000/patients/book_appointment/get",
+      "http://hospital-appointment-system-s9z1.onrender.com/patients/book_appointment/get",
     );
 
     let appointment_data = await get_data.json();
@@ -50,7 +50,7 @@ async function book_appointment(patient_id, doctor_id) {
     console.log(appointment_data);
 
     let response = await fetch(
-      `http://localhost:3000/patients/book_appointment/post`,
+      `http://hospital-appointment-system-s9z1.onrender.com/patients/book_appointment/post`,
       {
         method: "POST",
         headers: {

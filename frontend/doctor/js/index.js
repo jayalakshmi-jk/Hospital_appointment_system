@@ -21,7 +21,7 @@ async function load_appointments() {
     let doctor = JSON.parse(localStorage.getItem("doctor"));
 
     let response = await fetch(
-      `http://localhost:3000/doctor/load-appointment/${doctor.id}`,
+      `http://hospital-appointment-system-s9z1.onrender.com/doctor/load-appointment/${doctor.id}`,
     );
 
     let data = await response.json();
@@ -61,7 +61,7 @@ async function save_appointment(e) {
 
   try {
     let response = await fetch(
-      `http://localhost:3000/doctor/update-appointment/${edit_form.dataset.appointmentId}`,
+      `http://hospital-appointment-system-s9z1.onrender.com/doctor/update-appointment/${edit_form.dataset.appointmentId}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -96,7 +96,7 @@ async function delete_appointment(id) {
   console.log(id);
   try {
     let response = await fetch(
-      `http://localhost:3000/doctor/delete-appointment/${id}`,
+      `http://hospital-appointment-system-s9z1.onrender.com/doctor/delete-appointment/${id}`,
       {
         method: "DELETE",
       },
@@ -119,7 +119,7 @@ async function search_appointment() {
         let value = search.value;
     let doctor = JSON.parse(localStorage.getItem("doctor"));
     
-    let response = await fetch(`http://localhost:3000/doctor/search-appointment?search=${encodeURIComponent(value)}&doctor_id=${doctor.id}`)
+    let response = await fetch(`http://hospital-appointment-system-s9z1.onrender.com/doctor/search-appointment?search=${encodeURIComponent(value)}&doctor_id=${doctor.id}`)
 
     let data = await response.json()
 

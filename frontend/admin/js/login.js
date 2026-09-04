@@ -54,7 +54,7 @@ async function doctor_login(e) {
   console.log(login_data);
 
   try {
-    let response = await fetch(`http://localhost:3000/doctor/login`, {
+    let response = await fetch(`http://hospital-appointment-system-s9z1.onrender.com/doctor/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
