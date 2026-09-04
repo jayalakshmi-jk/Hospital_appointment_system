@@ -30,7 +30,7 @@ async function patient_register(e) {
   console.log(new_patient);
   
   try {
-    let response = await fetch(`http://hospital-appointment-system-s9z1.onrender.com/patients/post`, {
+    let response = await fetch(`https://hospital-appointment-system-s9z1.onrender.com/patients/post`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
