@@ -6,7 +6,7 @@ let edit_form = document.getElementById('edit-input')
 
 let doctor = JSON.parse(localStorage.getItem("doctor"));
 if(!doctor){
-    window.location.href = '/frontend/admin/html/login.html'
+    window.location.href = '/admin/html/login.html'
 }
 
 document.addEventListener("DOMContentLoaded", load_appointments);

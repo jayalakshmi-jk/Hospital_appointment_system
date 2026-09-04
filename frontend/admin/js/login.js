@@ -32,7 +32,7 @@ async function admin_login(e) {
     localStorage.setItem("admin", JSON.stringify(login_data));
 
     admin.reset();
-    window.location.href = "/frontend/admin/html/index.html";
+    window.location.href = "/admin/html/index.html";
   } catch (error) {
     console.log(error);
   }
@@ -72,7 +72,7 @@ async function doctor_login(e) {
     if (response.status === 200) {
       alert("Login successful!");
       doctor.reset();
-      window.location.href = "/frontend/doctor/html/index.html";
+      window.location.href = "/doctor/html/index.html";
     }else{
 
     alert(data.message);

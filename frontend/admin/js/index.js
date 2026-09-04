@@ -14,7 +14,7 @@ let app_tbody = document.querySelector(".appointment-list tbody");
 let l_admin = localStorage.getItem("admin");
 
 if (!l_admin) {
-  window.location.href = "/frontend/admin/html/login.html";
+  window.location.href = "/admin/html/login.html";
 }
 
 
